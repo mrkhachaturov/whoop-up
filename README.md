@@ -254,8 +254,8 @@ whoop auth login
 ## Development
 
 ```bash
-git clone https://github.com/mrkhachaturov/whoop.git
-cd whoop
+git clone https://github.com/mrkhachaturov/whoop-up.git
+cd whoop-up
 npm install
 
 npm run dev -- dashboard    # run without building
