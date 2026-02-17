@@ -190,7 +190,7 @@ program
       const params = {
         start: startDate + 'T00:00:00.000Z',
         end: new Date().toISOString(),
-        limit: 50,
+        limit: 25,
       };
 
       const [recovery, sleep, cycle] = await Promise.all([
