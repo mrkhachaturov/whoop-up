@@ -59,7 +59,7 @@ function htmlPage(title: string, body: string): string {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${title} — whoop-sync</title>
+<title>${title} — whoop-up</title>
 ${APEXCHARTS_CDN}
 ${SWITCH_LANG_JS}
 <style>${DARK_THEME}</style>
@@ -480,7 +480,7 @@ export async function openChart(
   outputPath?: string
 ): Promise<void> {
   const html = htmlPage(title, body);
-  const filePath = outputPath ?? join(tmpdir(), `whoop-sync-${Date.now()}.html`);
+  const filePath = outputPath ?? join(tmpdir(), `whoop-${Date.now()}.html`);
 
   writeFileSync(filePath, html, 'utf-8');
 

@@ -42,7 +42,7 @@ function outputJson(data: WhoopData, pretty: boolean): void {
 // ─── Auth ─────────────────────────────────────────────────────────────────────
 
 program
-  .name('whoop-sync')
+  .name('whoop')
   .description('Pro CLI for WHOOP health data — fetch, analyze, and visualize')
   .version('1.0.0');
 

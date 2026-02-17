@@ -99,7 +99,7 @@ export async function logout(): Promise<void> {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${tokens.access_token}`,
-          'User-Agent': 'whoop-sync/1.0',
+          'User-Agent': 'whoop-up/1.0',
         },
       });
       if (response.ok || response.status === 204) {
@@ -122,7 +122,7 @@ export function status(): void {
   const tokens = loadTokens();
 
   if (!tokenStatus.authenticated) {
-    console.log(JSON.stringify({ authenticated: false, message: 'Not logged in. Run: whoop-sync auth login' }, null, 2));
+    console.log(JSON.stringify({ authenticated: false, message: 'Not logged in. Run: whoop auth login' }, null, 2));
     return;
   }
 
@@ -143,7 +143,7 @@ export async function refresh(): Promise<void> {
   const tokens = loadTokens();
 
   if (!tokens) {
-    throw new WhoopError('Not authenticated. Run: whoop-sync auth login', ExitCode.AUTH_ERROR);
+    throw new WhoopError('Not authenticated. Run: whoop auth login', ExitCode.AUTH_ERROR);
   }
 
   try {
@@ -162,7 +162,7 @@ export async function refresh(): Promise<void> {
   } catch (error) {
     if (error instanceof WhoopError && error.message.includes('refresh')) {
       throw new WhoopError(
-        'Refresh token expired. Please re-authenticate with: whoop-sync auth login',
+        'Refresh token expired. Please re-authenticate with: whoop auth login',
         ExitCode.AUTH_ERROR
       );
     }

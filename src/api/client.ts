@@ -15,7 +15,7 @@ import type {
 } from '../types/whoop.js';
 import { getDaysRange, getDateRange, nowISO } from '../utils/date.js';
 
-const USER_AGENT = 'whoop-sync/1.0';
+const USER_AGENT = 'whoop-up/1.0';
 const RETRY_CODES = new Set([429, 500, 502, 503, 504]);
 const MAX_RETRIES = 3;
 const MAX_PAGES = 50;

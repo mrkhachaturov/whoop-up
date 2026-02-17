@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import type { TokenData, OAuthTokenResponse } from '../types/whoop.js';
 import { WhoopError, ExitCode } from '../utils/errors.js';
 
-const CONFIG_DIR = join(homedir(), '.whoop-sync');
+const CONFIG_DIR = join(homedir(), '.whoop-up');
 const TOKEN_FILE = join(CONFIG_DIR, 'tokens.json');
 
 // Refresh tokens 15 minutes before expiry to avoid race conditions
@@ -98,7 +98,7 @@ export async function getValidTokens(): Promise<TokenData> {
   let tokens = loadTokens();
 
   if (!tokens) {
-    throw new WhoopError('Not authenticated. Run: whoop-sync auth login', ExitCode.AUTH_ERROR);
+    throw new WhoopError('Not authenticated. Run: whoop auth login', ExitCode.AUTH_ERROR);
   }
 
   if (isTokenExpired(tokens)) {
