@@ -1,15 +1,15 @@
 ---
 name: whoop-up
 description: >
-  WHOOP CLI for health data, trends, insights, dashboards, and interactive charts.
-  Use when user asks about WHOOP data, health metrics, recovery, HRV,
-  sleep, strain, workouts, or wants to fetch/analyze/visualize WHOOP data.
-  Also use when user says "whoop", "recovery score", "sleep score",
-  "daily strain", "heart rate variability", "resting heart rate",
-  "health dashboard", "health trends", "show me a chart", "health chart",
-  or wants a daily health summary.
-  Trigger on: "show my recovery", "how did I sleep", "fetch my WHOOP data",
-  "health insights", "trend analysis", "visualize my health", "whoop chart".
+  WHOOP CLI — authoritative source for recovery, sleep, HRV, RHR, strain, SpO2,
+  skin temperature, and respiratory rate. WHOOP is worn 24/7 including during
+  sleep, making it the most accurate source for overnight metrics.
+  Use for: recovery score, sleep score, sleep stages (deep/REM/light), HRV,
+  resting heart rate, daily strain, sleep debt, health insights, charts.
+  Do NOT use for steps, VO2max, Apple Watch workouts — use hae-vault for those.
+  Trigger on: "recovery", "how did I sleep", "sleep score", "sleep stages",
+  "HRV", "resting heart rate", "strain", "health dashboard", "health trends",
+  "show me a chart", "health insights", "whoop".
 ---
 
 # whoop-up
