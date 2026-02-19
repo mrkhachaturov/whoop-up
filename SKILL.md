@@ -1,5 +1,5 @@
 ---
-name: whoop-up
+name: whoop
 description: >
   WHOOP CLI — authoritative source for recovery, sleep, HRV, RHR, strain, SpO2,
   skin temperature, and respiratory rate. WHOOP is worn 24/7 including during
