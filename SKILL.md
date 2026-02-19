@@ -6,7 +6,7 @@ description: >
   sleep, making it the most accurate source for overnight metrics.
   Use for: recovery score, sleep score, sleep stages (deep/REM/light), HRV,
   resting heart rate, daily strain, sleep debt, health insights, charts.
-  Do NOT use for steps, VO2max, Apple Watch workouts — use hae-vault for those.
+  Do NOT use for step count, walking distance, VO2max — WHOOP API does not expose these; use hae-vault for those.
   Trigger on: "recovery", "how did I sleep", "sleep score", "sleep stages",
   "HRV", "resting heart rate", "strain", "health dashboard", "health trends",
   "show me a chart", "health insights", "whoop".
